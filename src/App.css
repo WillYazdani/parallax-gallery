@@ -9,7 +9,7 @@
   ;
 
   grid-template-rows: repeat(4, 25%);
-  grid-template-columns: 240px auto auto 240px;
+  grid-template-columns: repeat(4, 25%);
 
   --stagger-delay: 100ms;
 }
@@ -32,9 +32,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(44, 181, 231);
+  background-color: black;
   animation: cardEnter 0.5s ease-in-out;
   animation-fill-mode: backwards;
+  transition: 0.4s;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card:hover {
+  background-color: white;
+  color: black;
 }
 
 .card:nth-child(1) {
@@ -100,5 +109,11 @@
 .card:last-child {
   grid-area: ✔;
   animation-delay: calc(13 * var(--stagger-delay));
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    font-size: 1.5rem;
+  }
 }
 
