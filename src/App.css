@@ -12,6 +12,8 @@
   grid-template-columns: repeat(4, 25%);
 
   --stagger-delay: 100ms;
+
+  overflow: hidden;
 }
 
 @keyframes cardEnter {
@@ -35,15 +37,14 @@
   background-color: black;
   animation: cardEnter 0.5s ease-in-out;
   animation-fill-mode: backwards;
-  transition: 0.4s;
-  font-size: 2rem;
-  font-weight: bold;
   text-align: center;
-}
+  
 
-.card:hover {
-  background-color: white;
-  color: black;
+  --x-translate: 0;
+  --y-translate: 0;
+
+  transform-origin: center center;
+  transform-style: preserve-3d;
 }
 
 .card:nth-child(1) {
@@ -109,6 +110,23 @@
 .card:last-child {
   grid-area: ✔;
   animation-delay: calc(13 * var(--stagger-delay));
+}
+
+h1:nth-child(1) {
+ position:absolute;
+ z-index: 5;
+}
+
+h1:nth-child(2) {
+  position: absolute;
+  z-index: 4;
+  color: red;
+}
+
+h1:nth-child(3) {
+  position: absolute;
+  z-index: 3;
+  color: blue;
 }
 
 @media screen and (max-width: 768px) {
