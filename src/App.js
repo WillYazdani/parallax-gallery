@@ -1,24 +1,13 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 import {  motion, useAnimation } from "framer-motion";
 
 
-function App() {
+export default function App() {
 
   //parallax on hover
 
   const parallax = useAnimation();
-  // const parallax1 = useAnimation();
-  // const parallax2 = useAnimation();
-  // const parallax3 = useAnimation();
-  // const parallax4 = useAnimation();
-  // const parallax5 = useAnimation();
-  // const parallax6 = useAnimation();
-  // const parallax7 = useAnimation();
-  // const parallax8 = useAnimation();
-  // const parallax9 = useAnimation();
-  // const parallax10 = useAnimation();
-  // const parallax11 = useAnimation();
-  // const parallax12 = useAnimation();
 
   const handleMouseMove = e => {
     const {clientX, clientY} = e;
@@ -41,6 +30,9 @@ function App() {
   };
 
   return (
+    <>
+
+
       <section className='animated-grid'>
 
 
@@ -165,7 +157,9 @@ function App() {
 
 
       </section>
-  );
-};
 
-export default App;
+
+    </>
+
+  );
+}
