@@ -1,0 +1,12 @@
+.home-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    font-family: roboto, arial, helvetica, sans-serif;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
