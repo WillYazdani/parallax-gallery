@@ -39,6 +39,7 @@
   background-color: black;
   text-align: center;
   background-size: cover;
+  cursor: pointer;
   
 
   --x-translate: 0;
@@ -128,18 +129,6 @@
 h1:nth-child(1) {
  position:absolute;
  z-index: 5;
-}
-
-h1:nth-child(2) {
-  position: absolute;
-  z-index: 4;
-  color: red;
-}
-
-h1:nth-child(3) {
-  position: absolute;
-  z-index: 3;
-  color: blue;
 }
 
 @media screen and (max-width: 768px) {
