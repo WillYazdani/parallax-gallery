@@ -49,6 +49,11 @@
   transform-style: preserve-3d;
 }
 
+.card-link {
+  height: 100%;
+  width: 100%;
+}
+
 .card:nth-child(1) {
   grid-area: a;
   animation-delay: calc(1 * var(--stagger-delay));

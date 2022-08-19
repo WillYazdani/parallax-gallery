@@ -1,20 +1,6 @@
 import './App.css';
 import { Link } from 'react-router-dom';
 import {  motion, useAnimation } from "framer-motion";
-import One from './components/1.js'
-import Two from './components/2.js'
-import Three from './components/3.js'
-import Four from './components/4.js'
-import Five from './components/5.js'
-import Six from './components/6.js'
-import Seven from './components/7.js'
-import Eight from './components/8.js'
-import Nine from './components/9.js'
-import Ten from './components/10.js'
-import Eleven from './components/11.js'
-import Twelve from './components/12.js'
-
-
 
 export default function App() {
 
@@ -48,13 +34,12 @@ export default function App() {
 
       <section className='animated-grid'>
 
-
         <motion.div
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { One() }}
         >
+          <Link to='/1' className='card-link' />
         </motion.div>
 
 
@@ -62,8 +47,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Two() }}
         >
+          <Link to='/2' className='card-link' />
         </motion.div>
 
 
@@ -71,8 +56,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Three() }}
         >
+          <Link to='/3' className='card-link' />
         </motion.div>
 
 
@@ -80,8 +65,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Four() }}
         >
+          <Link to='/4' className='card-link' />
         </motion.div>
 
 
@@ -89,8 +74,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Five() }}
         >
+          <Link to='/5' className='card-link' />
         </motion.div>
 
 
@@ -98,8 +83,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Six() }}
         >
+          <Link to='/6' className='card-link' />
         </motion.div>
 
 
@@ -107,8 +92,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Seven() }}
         >
+          <Link to='/7' className='card-link' />
         </motion.div>
 
 
@@ -116,8 +101,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Eight() }}
         >
+          <Link to='/8' className='card-link' />
         </motion.div>
 
 
@@ -125,8 +110,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Nine() }}
         >
+          <Link to='/9' className='card-link' />
         </motion.div>
 
 
@@ -134,8 +119,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Ten() }}
         >
+          <Link to='/10' className='card-link' />
         </motion.div>
 
 
@@ -143,8 +128,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Eleven() }}
         >
+          <Link to='/11' className='card-link' />
         </motion.div>
 
 
@@ -152,8 +137,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
-        onClick={() => { Twelve() }}
         >
+          <Link to='/12' className='card-link' />
         </motion.div>
 
 
