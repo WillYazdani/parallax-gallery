@@ -105,17 +105,19 @@
 .card:nth-child(10) {
   grid-area: j;
   animation-delay: calc(10 * var(--stagger-delay));
-  
+  background-image: url(../src/assets/images/10.jpg)
 }
 
 .card:nth-child(11) {
   grid-area: k;
   animation-delay: calc(11 * var(--stagger-delay));
+  background-image: url(../src/assets/images/11.jpg)
 }
 
 .card:nth-child(12) {
   grid-area: l;
   animation-delay: calc(12 * var(--stagger-delay));
+  background-image: url(../src/assets/images/12.jpg)
 }
 
 .card:last-child {
