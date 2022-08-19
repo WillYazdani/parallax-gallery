@@ -1,6 +1,19 @@
 import './App.css';
 import { Link } from 'react-router-dom';
 import {  motion, useAnimation } from "framer-motion";
+import One from './components/1.js'
+import Two from './components/2.js'
+import Three from './components/3.js'
+import Four from './components/4.js'
+import Five from './components/5.js'
+import Six from './components/6.js'
+import Seven from './components/7.js'
+import Eight from './components/8.js'
+import Nine from './components/9.js'
+import Ten from './components/10.js'
+import Eleven from './components/11.js'
+import Twelve from './components/12.js'
+
 
 
 export default function App() {
@@ -40,6 +53,7 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { One() }}
         >
         </motion.div>
 
@@ -48,6 +62,7 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Two() }}
         >
         </motion.div>
 
@@ -56,6 +71,7 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Three() }}
         >
         </motion.div>
 
@@ -64,6 +80,7 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Four() }}
         >
         </motion.div>
 
@@ -72,6 +89,7 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Five() }}
         >
         </motion.div>
 
@@ -80,6 +98,7 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Six() }}
         >
         </motion.div>
 
@@ -88,6 +107,7 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Seven() }}
         >
         </motion.div>
 
@@ -96,6 +116,7 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Eight() }}
         >
         </motion.div>
 
@@ -104,6 +125,7 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Nine() }}
         >
         </motion.div>
 
@@ -112,8 +134,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Ten() }}
         >
-          <h1>10</h1>
         </motion.div>
 
 
@@ -121,8 +143,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Eleven() }}
         >
-          <h1>11</h1>
         </motion.div>
 
 
@@ -130,8 +152,8 @@ export default function App() {
         className='card'
         whileHover={{ scale:0.95 }}
         whileTap={{ scale:0.8 }}
+        onClick={() => { Twelve() }}
         >
-          <h1>12</h1>
         </motion.div>
 
 
