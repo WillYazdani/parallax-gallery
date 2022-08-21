@@ -1,17 +1,22 @@
 import './tilt.css';
 import { Link } from 'react-router-dom';
-import {  motion, useAnimation } from "framer-motion";
+import {  motion } from "framer-motion";
 
 export default function One () {
     console.log('One');
     return(
-        <div>
-            <Link to='/'>
-                <motion.button
-                className='home-btn'>
-                    HOME
-                </motion.button>
-            </Link>
-        </div>
+        <>
+            <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.15 } }}
+            transition={{ duration: 0.2, delay: 0.15 }}
+            style={{ pointerEvents: "auto" }}
+            className="overlay"
+            >
+                <Link to ='/' />
+            </motion.div>
+            <img src={require('../assets/images/1.jpg')} alt='1' />
+        </>
     )
 }
