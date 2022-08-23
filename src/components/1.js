@@ -19,4 +19,4 @@ export default function One () {
             <img src={require('../assets/images/1.jpg')} alt='1' />
         </>
     )
-}
+};
